@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HotJar - Download recordings actions as CSV
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Download as CSV the list of action within a session recording, the filename is the query string to append to https://insights.hotjar.com/r 
 // for example filename: _site=2464694&recording=6692080434.csv becomes https://insights.hotjar.com/r?site=2464694&recording=6692080434
 // @author       Alessandro Stoppato
@@ -9,8 +9,8 @@
 // @icon         https://www.google.com/s2/favicons?domain=hotjar.com
 // @grant        none
 // @noframes
-// @downloadURL https://raw.githubusercontent.com/alexrah/userscript_pct_debug_ads/master/main.js
-// @updateURL https://raw.githubusercontent.com/alexrah/userscript_pct_debug_ads/master/main.js
+// @downloadURL https://raw.githubusercontent.com/alexrah/userscript_hotjar_export_actions_csv/master/main.js
+// @updateURL https://raw.githubusercontent.com/alexrah/userscript_hotjar_export_actions_csv/master/main.js
 // ==/UserScript==
 
 (function() {
