@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HotJar - Download recordings actions as CSV
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Download as CSV the list of action within a session recording, the filename is the query string to append to https://insights.hotjar.com/r 
 // for example filename: _site=2464694&recording=6692080434.csv becomes https://insights.hotjar.com/r?site=2464694&recording=6692080434
 // @author       Alessandro Stoppato
@@ -51,7 +51,7 @@
                 // console.log(action_table);
                 actions_table.push({'Action':action_table[0],"URL":action_table[1]})
             });
-            // console.table(actions_table);
+            console.table(actions_table);
             let replacer = (key, value) => value === null ? '' : value // specify how you want to handle null values here
             let header = Object.keys(actions_table[0]);
             let csv = [
